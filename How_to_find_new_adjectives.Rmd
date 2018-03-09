@@ -1,6 +1,7 @@
 ---
 title: "Collect some great adjectives"
 output: pdf_document
+linkcolor: 'blue'
 ---
 
 Thank you for helping collect items for a new and improved Social Probabilistic Learning paradigm! If you don't know this task yet and are curious, you can look at a demo [here](http://cas-arcs.uoregon.edu/IRB_SPLIT/) (enter any number of participant ID and press "enter" for any blank screens). 
@@ -25,12 +26,12 @@ First, here are the eight social motives that I've taken status and mate-seeking
 - Status
 - Mate seeking
 - Mate retention
-- Care for one's onw children
+- Care for one's own children
 - Care for family
 
 ## Mate seeking
 
-There's no great description, in the papers I've uploaded, of the kinds of things that might be relevant to mate-seeking motives. Interestingly, a lot of things related to _stats_ are relevant for most people. I'm looking around for something better, but here's the guidance I can give you right now: look for adjectives that are pretty status-neutral but that might be important information when considering a possible long-term or short-term relationship partner. Like the above "is this person dating someone or looking for someone to date?" For example, "faithful" and "adulterous". Both these adjectives descibe tendencies in behavior that might be relevant to someone looking for a partner, and while they may be related to social status in some cultural contexts, it seems to me that they don't automatically convey social status. 
+There's no great description, in the papers I've uploaded, of the kinds of things that might be relevant to mate-seeking motives. Interestingly, a lot of things related to _stats_ are relevant for most people. I'm looking around for something better, but here's the guidance I can give you right now: look for adjectives that are pretty status-neutral but that might be important information when considering a possible long-term or short-term relationship partner. Like the above "is this person dating someone or looking for someone to date?" For example, "faithful" and "adulterous". Both these adjectives describe tendencies in behavior that might be relevant to someone looking for a partner, and while they may be related to social status in some cultural contexts, it seems to me that they don't automatically convey social status. 
 
 Use that, and your own intuition to guide your choices here.
 
@@ -68,13 +69,12 @@ Use these ideas about status and your own intuition to pick out good words.
 
 First, split up the source material. Here's an easy list to work from -- just do the constructs and words that start with these letters. And if one of you finishes early, grab stuff from the other.
 
-```{r echo=F,message=F}
+```{r echo=F, message=F, results='asis'}
 set.seed(41107)
 random_letters <- sample(letters, size = length(letters))
-knitr::kable(data.frame(
-    Hannah = sort(random_letters[seq(1, 26,2)]),
-    Morgan = sort(random_letters[seq(2, 26,2)])
-))
+
+cat(paste0('**Hannah**: ', paste(sort(random_letters[seq(1, 26,2)]), collapse = ', '), '\n\n'))
+cat(paste0('**Morgan**: ', paste(sort(random_letters[seq(2, 26,2)]), collapse = ', ')))
 ```
 
 Keep track of the words in [this spreadsheet](https://osf.io/5qm48/), which you can access by clicking "View this file on Google Drive" and signing in with some gmail account. If that doesn't work for you, please let me know.
